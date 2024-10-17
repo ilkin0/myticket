@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name:  myticket-be
+  profiles:
+    include:
+      - dev
+    active: ${SPRING_PORFILES_ACTIVE:dev}

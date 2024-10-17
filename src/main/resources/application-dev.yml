@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/myticket_db
+    username: postgres
+    password: password
+  liquibase:
+    enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: false
