@@ -1,0 +1,8 @@
+security:
+  jwt:
+    accessToken:
+      secret: PLACEHODLER_FOR_NOW
+      expiration: 900000
+    refreshToken:
+      secret: PLACEHODLER_FOR_NOW
+      expiration: 900000

@@ -6,5 +6,5 @@ spring:
     name:  myticket-be
   profiles:
     include:
-      - dev
-    active: ${SPRING_PORFILES_ACTIVE:dev}
+      - security
+    active: ${SPRING_PROFILES_ACTIVE:dev}
