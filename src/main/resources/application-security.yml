@@ -1,8 +1,8 @@
 security:
   jwt:
     accessToken:
-      secret: PLACEHODLER_FOR_NOW
+      secret: wiVPh5FLuXOjs0uQABmPLLKL/DZtRq8T5IvkH+yUoxs7oKut7PmacPM1bL5K1EkPoFUuDeXKTF7IxyqPRSRTOurTuTPRPdS3mdLXzSWxPDFQxxLw15cc2RyKI0qmRk12PEDeCY7ikercHfAIGt9X1W8bfGfYI/ivZT9oSozgZ29Xeta0IsmrFLL95nW4BWccDAiOTR88K7vB55i+jWeIBrPxCDX7xSzk/ZNtdJbA+f3OAcnUcD/6reVIT31isk/PQWvRk6dSEePZcSxb/kQLFfrh7iwKToYaxbqqG0S0OdFoU8fEECbLwTFAKGueOOEqFSuShIONasyWpSMMaNhqWQ==
       expiration: 900000
     refreshToken:
-      secret: PLACEHODLER_FOR_NOW
+      secret: teUWaJG+lnWhd0hC2FLcWiYTs3K4PVyO7j93/Nm7nWRQZnQRvy2GFDKwwGZq+diopNm0tjVAfmV/jEQich5pON2K/zMJg5M7C/VDr7xIC6DKLVuLNEY9bTt9QGLnrqWZ1zxyoGcEo1LK3Wd3O7PVa9a+cWW9Np/k1SMMetAjeuXcmqybYmYe0MjDR/WgWnCciwdQkl9CBYWNJPRZsDLXZQHpzB8A/pohO8dwW3nuW77xMoDhHBCmHamKWUN9dbCl+EsMWgRM9u5NSS4rL7EaTKO6bCfamjH0aKyRqNAIw3zPo1xira/1Wz6Ji1Cvl+Gs8cGWVQc/aLBfJT+FlU36LA==
       expiration: 900000

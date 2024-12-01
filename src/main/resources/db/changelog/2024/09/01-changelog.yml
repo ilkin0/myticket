@@ -34,6 +34,30 @@ databaseChangeLog:
                   type: VARCHAR(25)
                   constraints:
                     nullable: false
+              - column:
+                  name: is_active
+                  type: BOOLEAN
+              - column:
+                  name: created_at
+                  type: DATETIME
+              - column:
+                  name: updated_at
+                  type: DATETIME
+              - column:
+                  name: created_by
+                  type: BIGINT
+              - column:
+                  name: updated_by
+                  type: BIGINT
+              - column:
+                  name: is_account_non_locked
+                  type: BOOLEAN
+              - column:
+                  name: is_account_non_expired
+                  type: BOOLEAN
+              - column:
+                  name: is_credentials_non_expired
+                  type: BOOLEAN
 
   - changeSet:
       id: 20240915-02
@@ -50,7 +74,7 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: role_name
+                  name: name
                   type: VARCHAR(25)
                   constraints:
                     unique: true

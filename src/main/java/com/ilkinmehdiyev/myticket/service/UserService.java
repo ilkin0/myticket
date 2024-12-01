@@ -22,4 +22,14 @@ public class UserService {
               return new UsernameNotFoundException(username);
             });
   }
+
+  public boolean existsByEmail(String email) {
+    log.debug("Validating email {}", email);
+    return userRepository.existsByEmail(email);
+  }
+
+  public User save(User user) {
+    log.debug("Saving user, username {}", user.getEmail());
+    return userRepository.save(user);
+  }
 }

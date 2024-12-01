@@ -4,12 +4,18 @@ import com.ilkinmehdiyev.myticket.security.CustomUserDetails;
 import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class User extends Audit {
 
@@ -43,8 +49,6 @@ public class User extends Audit {
   private boolean isAccountNonLocked;
 
   private boolean isCredentialsNonExpired;
-
-  private boolean isEnabled;
 
   public CustomUserDetails userDetails() {
     return new CustomUserDetails(this);

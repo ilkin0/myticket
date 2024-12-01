@@ -2,12 +2,18 @@ package com.ilkinmehdiyev.myticket.domain.entity;
 
 import jakarta.persistence.*;
 import java.time.Instant;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "tokens")
 public class Token {
   @Id
@@ -15,7 +21,7 @@ public class Token {
   private Long id;
 
   @Column(nullable = false, unique = true)
-  private String value; /// TODO introduce index for this attr
+  private String value;
 
   private Instant issuedAt;
 

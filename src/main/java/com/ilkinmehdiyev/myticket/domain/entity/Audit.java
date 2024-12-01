@@ -1,9 +1,10 @@
 package com.ilkinmehdiyev.myticket.domain.entity;
 
 import jakarta.persistence.Column;
-import java.time.Instant;
-
 import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
+import java.time.Instant;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedBy;
@@ -35,6 +36,13 @@ public class Audit {
   @Column(name = "updated_by")
   private Long updatedBy;
 
+  @PrePersist
+  protected void onCreate() {
+    createdAt = updatedAt = Instant.now();
+  }
 
-  /// Pre Persist PostPersist
+  @PreUpdate
+  protected void onUpdate() {
+    updatedAt = Instant.now();
+  }
 }

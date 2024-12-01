@@ -11,6 +11,10 @@
         - [X] Introduce Token Entity
         - [x] FilterChain
         - [ ] Implement Auth APIs
+          - Register
+          - SignIn
+          - SignOut
+          - ForgetPassword ?
 
 ## FE
 
